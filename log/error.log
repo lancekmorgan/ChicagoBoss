@@ -1,3 +1,7 @@
 2014-06-13 12:57:29.294 [error] <0.98.0>@boss_load:load_views_inner:412 Unable to compile "src/view/greeting/create.html" because of [{"src/view/greeting/create.html",[{{21,50},erlydtl_scanner,{illegal_char,37}}]}]
 2014-06-13 12:57:49.930 [error] <0.279.0> GET / [demo] 404 0ms
 2014-06-13 12:58:18.563 [error] <0.113.0> Supervisor {<0.113.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2014-06-13 14:20:02.966 [error] <0.98.0>@boss_load:load_views_inner:412 Unable to compile "src/view/greeting/create.html" because of [{"src/view/greeting/create.html",[{{21,50},erlydtl_scanner,{illegal_char,37}}]}]
+2014-06-13 14:32:09.228 [error] <0.311.0> GET /greeting/lists [demo] 404 0ms
+2014-06-13 14:37:55.831 [error] <0.327.0>@boss_web_controller_render:render_view:227 Template Error template : "create"  error: [{"src/view/greeting/create.html",[{{21,50},erlydtl_scanner,{illegal_char,37}}]}] 
+2014-06-13 14:43:58.213 [error] <0.113.0> Supervisor {<0.113.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error

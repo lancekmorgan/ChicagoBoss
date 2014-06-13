@@ -40,3 +40,293 @@
 2014-06-13 12:57:49.929 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
 2014-06-13 12:57:49.930 [error] <0.279.0> GET / [demo] 404 0ms
 2014-06-13 12:58:18.563 [error] <0.113.0> Supervisor {<0.113.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2014-06-13 14:20:02.612 [info] <0.7.0> Application lager started on node 'demo@sll-macc02m20fc'
+2014-06-13 14:20:02.628 [info] <0.7.0> Application crypto started on node 'demo@sll-macc02m20fc'
+2014-06-13 14:20:02.639 [info] <0.7.0> Application mimetypes started on node 'demo@sll-macc02m20fc'
+2014-06-13 14:20:02.668 [info] <0.98.0> Starting Boss in development mode....
+
+2014-06-13 14:20:02.676 [info] <0.98.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2014-06-13 14:20:02.715 [info] <0.98.0> Starting master services on 'demo@sll-macc02m20fc'
+
+2014-06-13 14:20:02.728 [info] <0.7.0> Application tinymq started on node 'demo@sll-macc02m20fc'
+2014-06-13 14:20:02.759 [info] <0.98.0> SSL:[]
+
+2014-06-13 14:20:02.762 [info] <0.98.0> Starting cowboy... on 'demo@sll-macc02m20fc'
+
+2014-06-13 14:20:02.766 [info] <0.7.0> Application cowlib started on node 'demo@sll-macc02m20fc'
+2014-06-13 14:20:02.771 [info] <0.7.0> Application ranch started on node 'demo@sll-macc02m20fc'
+2014-06-13 14:20:02.783 [info] <0.7.0> Application cowboy started on node 'demo@sll-macc02m20fc'
+2014-06-13 14:20:02.783 [info] <0.98.0> Starting http listener... on 0.0.0.0:8001 
+
+2014-06-13 14:20:02.834 [info] <0.98.0>@boss_load:load_all_modules:57 Loading application demo
+2014-06-13 14:20:02.843 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/mail/demo_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:20:02.865 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/mail/demo_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:20:02.876 [info] <0.98.0>@boss_controller_compiler:compile:59 Compile controller /Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl
+2014-06-13 14:20:02.876 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:20:02.889 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/model/greeting.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:20:02.890 [info] <0.98.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},greeting},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'GreetingText'},{']',{1,36}},{')',{1,37}},{dot,{1,38}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{eof,{19,1}}]
+2014-06-13 14:20:02.890 [notice] <0.98.0>@boss_record_compiler:make_generated_forms:225 Module "greeting" Parameters ['Id','GreetingText'] Attributes[{compile,export_all}]
+2014-06-13 14:20:02.911 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/view/lib/tag_modules/demo_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:20:02.915 [notice] <0.62.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2014-06-13 14:20:02.919 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/view/lib/filter_modules/demo_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:20:02.921 [info] <0.98.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  demo_view_lib_tags
+2014-06-13 14:20:02.966 [error] <0.98.0>@boss_load:load_views_inner:412 Unable to compile "src/view/greeting/create.html" because of [{"src/view/greeting/create.html",[{{21,50},erlydtl_scanner,{illegal_char,37}}]}]
+2014-06-13 14:20:03.000 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/priv/init/demo_01_news.erl" with options [{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]}] 
+2014-06-13 14:21:51.523 [notice] <0.279.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:21:51.526 [warning] <0.6.0> lager_error_logger_h dropped 53 messages in the last second that exceeded the limit of 50 messages/sec
+2014-06-13 14:21:51.526 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:21:51.540 [notice] <0.279.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:21:51.540 [notice] <0.279.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:21:51.545 [info] <0.279.0> GET /greeting/hello [demo] 200 0ms
+2014-06-13 14:21:51.680 [notice] <0.280.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:22:35.004 [notice] <0.282.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:22:35.005 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:22:35.007 [info] <0.282.0>@boss_controller_compiler:compile:59 Compile controller /Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl
+2014-06-13 14:22:35.007 [notice] <0.282.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:22:35.011 [notice] <0.282.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:22:35.011 [notice] <0.282.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:22:35.021 [info] <0.282.0> GET /greeting/hello [demo] 200 0ms
+2014-06-13 14:22:37.951 [notice] <0.283.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:22:37.952 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:22:37.954 [notice] <0.283.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:22:37.954 [notice] <0.283.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:22:37.955 [info] <0.283.0> GET /greeting/hello [demo] 200 0ms
+2014-06-13 14:23:59.572 [notice] <0.288.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:23:59.573 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:23:59.574 [info] <0.288.0>@boss_controller_compiler:compile:59 Compile controller /Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl
+2014-06-13 14:23:59.575 [notice] <0.288.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:23:59.579 [notice] <0.288.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:23:59.579 [notice] <0.288.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:23:59.587 [info] <0.288.0> GET /greeting/hello [demo] 200 0ms
+2014-06-13 14:24:20.450 [notice] <0.292.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:24:20.450 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:24:20.453 [notice] <0.292.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:24:20.453 [notice] <0.292.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:24:20.459 [info] <0.292.0> GET /greeting/hello [demo] 200 0ms
+2014-06-13 14:27:43.492 [notice] <0.298.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:27:43.501 [info] <0.298.0> GET /doc [demo] 200 0ms
+2014-06-13 14:27:52.018 [notice] <0.300.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:27:52.020 [info] <0.300.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},greeting},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'GreetingText'},{']',{1,36}},{')',{1,37}},{dot,{1,38}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{eof,{19,1}}]
+2014-06-13 14:27:52.020 [notice] <0.300.0>@boss_record_compiler:make_generated_forms:225 Module "greeting" Parameters ['Id','GreetingText'] Attributes[{compile,export_all}]
+2014-06-13 14:27:52.128 [info] <0.300.0> GET /doc/greeting [demo] 200 0ms
+2014-06-13 14:32:09.209 [notice] <0.311.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:32:09.209 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:32:09.211 [info] <0.311.0>@boss_controller_compiler:compile:59 Compile controller /Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl
+2014-06-13 14:32:09.212 [notice] <0.311.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:32:09.215 [notice] <0.311.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/model/greeting.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:32:09.215 [info] <0.311.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},greeting},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'GreetingText'},{']',{1,36}},{')',{1,37}},{dot,{1,38}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{eof,{19,1}}]
+2014-06-13 14:32:09.216 [notice] <0.311.0>@boss_record_compiler:make_generated_forms:225 Module "greeting" Parameters ['Id','GreetingText'] Attributes[{compile,export_all}]
+2014-06-13 14:32:09.226 [notice] <0.311.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:32:09.226 [notice] <0.311.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:32:09.226 [notice] <0.311.0>@boss_controller_adapter_pmod:action:100 [ChicagoBoss] The function demo_greeting_controller:lists/2 is not exported, if in doubt add -export([lists/2])) to the module
+2014-06-13 14:32:09.228 [error] <0.311.0> GET /greeting/lists [demo] 404 0ms
+2014-06-13 14:32:15.485 [notice] <0.319.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:32:15.486 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:32:15.489 [notice] <0.319.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:32:15.489 [notice] <0.319.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:32:15.489 [notice] <0.319.0>@boss_controller_adapter_pmod:action:100 [ChicagoBoss] The function demo_greeting_controller:list/2 is not exported, if in doubt add -export([list/2])) to the module
+2014-06-13 14:32:15.495 [info] <0.319.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:33:56.818 [notice] <0.321.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:33:56.819 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:33:56.822 [info] <0.321.0>@boss_controller_compiler:compile:59 Compile controller /Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl
+2014-06-13 14:33:56.822 [notice] <0.321.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:33:56.827 [notice] <0.321.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:33:56.827 [notice] <0.321.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:33:56.829 [info] <0.321.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:37:52.124 [notice] <0.326.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:37:52.124 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:37:52.126 [info] <0.326.0>@boss_controller_compiler:compile:59 Compile controller /Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl
+2014-06-13 14:37:52.126 [notice] <0.326.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:37:52.132 [notice] <0.326.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:37:52.132 [notice] <0.326.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:37:52.135 [info] <0.326.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:37:55.817 [notice] <0.327.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:37:55.818 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:37:55.822 [notice] <0.327.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:37:55.822 [notice] <0.327.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:37:55.831 [error] <0.327.0>@boss_web_controller_render:render_view:227 Template Error template : "create"  error: [{"src/view/greeting/create.html",[{{21,50},erlydtl_scanner,{illegal_char,37}}]}] 
+2014-06-13 14:37:55.835 [info] <0.327.0> GET /greeting/create [demo] 200 0ms
+2014-06-13 14:38:36.187 [notice] <0.332.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:38:36.188 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:38:36.191 [notice] <0.332.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:38:36.191 [notice] <0.332.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:38:36.218 [info] <0.332.0> GET /greeting/create [demo] 200 0ms
+2014-06-13 14:38:45.695 [notice] <0.335.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:38:45.696 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:38:45.699 [notice] <0.335.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-06-13 14:38:45.699 [notice] <0.335.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:38:45.700 [info] <0.335.0> POST /greeting/create [demo] 302 0ms
+2014-06-13 14:38:45.701 [notice] <0.337.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:38:45.702 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:38:45.704 [notice] <0.337.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:38:45.704 [notice] <0.337.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:38:45.706 [info] <0.337.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:39:31.353 [notice] <0.339.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:39:31.353 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:39:31.356 [notice] <0.339.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:39:31.356 [notice] <0.339.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:39:31.369 [info] <0.339.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:39:34.741 [notice] <0.342.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:39:34.742 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:39:34.745 [notice] <0.342.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:39:34.745 [notice] <0.342.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:39:34.759 [info] <0.342.0> GET /greeting/create [demo] 200 0ms
+2014-06-13 14:39:39.388 [notice] <0.345.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:39:39.389 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:39:39.392 [notice] <0.345.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-06-13 14:39:39.392 [notice] <0.345.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:39:39.393 [info] <0.345.0> POST /greeting/create [demo] 302 0ms
+2014-06-13 14:39:39.395 [notice] <0.347.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:39:39.395 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:39:39.397 [notice] <0.347.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:39:39.397 [notice] <0.347.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:39:39.400 [info] <0.347.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:41:54.494 [notice] <0.349.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:41:54.494 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:41:54.497 [notice] <0.349.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/model/greeting.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:41:54.497 [info] <0.349.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},greeting},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'GreetingText'},{']',{1,36}},{')',{1,37}},{dot,{1,38}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{atom,{4,1},validation_tests},{'(',{4,17}},{')',{4,18}},{'->',{4,20}},{'[',{5,5}},{'{',{5,6}},{fun,{5,7}},{'(',{5,10}},{')',{5,11}},{'->',{5,13}},{atom,{5,16},length},{'(',{5,22}},{var,{5,23},'GreetingText'},{')',{5,35}},{'>',{5,37}},{integer,{5,39},0},{end,{5,41}},{',',{5,44}},{string,{6,9},"Greeting must be non-empty!"},{'}',{6,38}},{',',{6,39}},{'{',{7,6}},{fun,{7,7}},{'(',{7,10}},{')',{7,11}},{'->',{7,13}},{atom,{7,16},length},{'(',{7,22}},{var,{7,23},'GreetingText'},{')',{7,35}},{'=<',{7,37}},{integer,{7,40},140},{end,{7,44}},{',',{7,47}},{string,{8,9},"Greeting must be tweetable"},{'}',{8,37}},{']',{8,38}},{dot,{8,39}},{eof,{19,1}}]
+2014-06-13 14:41:54.498 [notice] <0.349.0>@boss_record_compiler:make_generated_forms:225 Module "greeting" Parameters ['Id','GreetingText'] Attributes[{compile,export_all}]
+2014-06-13 14:41:54.510 [notice] <0.349.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:41:54.510 [notice] <0.349.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:41:54.513 [info] <0.349.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:41:56.108 [notice] <0.352.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:41:56.109 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:41:56.113 [notice] <0.352.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:41:56.113 [notice] <0.352.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:41:56.115 [info] <0.352.0> GET /greeting/create [demo] 200 0ms
+2014-06-13 14:41:57.865 [notice] <0.354.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:41:57.866 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:41:57.868 [notice] <0.354.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-06-13 14:41:57.868 [notice] <0.354.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:41:57.870 [info] <0.354.0> POST /greeting/create [demo] 302 0ms
+2014-06-13 14:41:57.871 [notice] <0.356.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:41:57.871 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:41:57.873 [notice] <0.356.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:41:57.873 [notice] <0.356.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:41:57.875 [info] <0.356.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:42:40.073 [notice] <0.358.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:42:40.074 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:42:40.077 [notice] <0.358.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:42:40.077 [notice] <0.358.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:42:40.079 [info] <0.358.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:42:40.545 [notice] <0.360.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:42:40.546 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:42:40.548 [notice] <0.360.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:42:40.548 [notice] <0.360.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:42:40.550 [info] <0.360.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:42:42.310 [notice] <0.362.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:42:42.310 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:42:42.315 [notice] <0.362.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:42:42.315 [notice] <0.362.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:42:42.317 [info] <0.362.0> GET /greeting/create [demo] 200 0ms
+2014-06-13 14:42:43.357 [notice] <0.364.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:42:43.358 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:42:43.361 [notice] <0.364.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-06-13 14:42:43.361 [notice] <0.364.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:42:43.362 [info] <0.364.0> POST /greeting/create [demo] 302 0ms
+2014-06-13 14:42:43.364 [notice] <0.366.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:42:43.364 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:42:43.366 [notice] <0.366.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:42:43.367 [notice] <0.366.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:42:43.369 [info] <0.366.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:42:44.617 [notice] <0.368.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:42:44.618 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:42:44.622 [notice] <0.368.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:42:44.622 [notice] <0.368.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:42:44.624 [info] <0.368.0> GET /greeting/create [demo] 200 0ms
+2014-06-13 14:42:53.008 [notice] <0.370.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:42:53.009 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:42:53.012 [notice] <0.370.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-06-13 14:42:53.012 [notice] <0.370.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:42:53.013 [info] <0.370.0> POST /greeting/create [demo] 302 0ms
+2014-06-13 14:42:53.015 [notice] <0.372.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:42:53.016 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:42:53.018 [notice] <0.372.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:42:53.018 [notice] <0.372.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:42:53.020 [info] <0.372.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:42:56.789 [notice] <0.374.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:42:56.790 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:42:56.793 [notice] <0.374.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:42:56.793 [notice] <0.374.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:42:56.795 [info] <0.374.0> GET /greeting/create [demo] 200 0ms
+2014-06-13 14:43:58.213 [error] <0.113.0> Supervisor {<0.113.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2014-06-13 14:44:03.963 [info] <0.7.0> Application lager started on node 'demo@sll-macc02m20fc'
+2014-06-13 14:44:03.981 [info] <0.7.0> Application crypto started on node 'demo@sll-macc02m20fc'
+2014-06-13 14:44:03.991 [info] <0.7.0> Application mimetypes started on node 'demo@sll-macc02m20fc'
+2014-06-13 14:44:04.023 [info] <0.98.0> Starting Boss in development mode....
+
+2014-06-13 14:44:04.031 [info] <0.98.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2014-06-13 14:44:04.067 [info] <0.98.0> Starting master services on 'demo@sll-macc02m20fc'
+
+2014-06-13 14:44:04.079 [info] <0.7.0> Application tinymq started on node 'demo@sll-macc02m20fc'
+2014-06-13 14:44:04.117 [info] <0.98.0> SSL:[]
+
+2014-06-13 14:44:04.121 [info] <0.98.0> Starting cowboy... on 'demo@sll-macc02m20fc'
+
+2014-06-13 14:44:04.124 [info] <0.7.0> Application cowlib started on node 'demo@sll-macc02m20fc'
+2014-06-13 14:44:04.128 [info] <0.7.0> Application ranch started on node 'demo@sll-macc02m20fc'
+2014-06-13 14:44:04.139 [info] <0.7.0> Application cowboy started on node 'demo@sll-macc02m20fc'
+2014-06-13 14:44:04.139 [info] <0.98.0> Starting http listener... on 0.0.0.0:8001 
+
+2014-06-13 14:44:04.184 [info] <0.98.0>@boss_load:load_all_modules:57 Loading application demo
+2014-06-13 14:44:04.192 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/mail/demo_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:44:04.214 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/mail/demo_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:44:04.223 [info] <0.98.0>@boss_controller_compiler:compile:59 Compile controller /Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl
+2014-06-13 14:44:04.223 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:44:04.237 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/model/greeting.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:44:04.237 [info] <0.98.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},greeting},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'GreetingText'},{']',{1,36}},{')',{1,37}},{dot,{1,38}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{atom,{4,1},validation_tests},{'(',{4,17}},{')',{4,18}},{'->',{4,20}},{'[',{5,5}},{'{',{5,6}},{fun,{5,7}},{'(',{5,10}},{')',{5,11}},{'->',{5,13}},{atom,{5,16},length},{'(',{5,22}},{var,{5,23},'GreetingText'},{')',{5,35}},{'>',{5,37}},{integer,{5,39},0},{end,{5,41}},{',',{5,44}},{string,{6,9},"Greeting must be non-empty!"},{'}',{6,38}},{',',{6,39}},{'{',{7,6}},{fun,{7,7}},{'(',{7,10}},{')',{7,11}},{'->',{7,13}},{atom,{7,16},length},{'(',{7,22}},{var,{7,23},'GreetingText'},{')',{7,35}},{'=<',{7,37}},{integer,{7,40},140},{end,{7,44}},{',',{7,47}},{string,{8,9},"Greeting must be tweetable"},{'}',{8,37}},{']',{8,38}},{dot,{8,39}},{eof,{19,1}}]
+2014-06-13 14:44:04.238 [notice] <0.98.0>@boss_record_compiler:make_generated_forms:225 Module "greeting" Parameters ['Id','GreetingText'] Attributes[{compile,export_all}]
+2014-06-13 14:44:04.253 [notice] <0.62.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2014-06-13 14:44:04.259 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/view/lib/tag_modules/demo_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:44:04.266 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/view/lib/filter_modules/demo_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:44:04.267 [info] <0.98.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  demo_view_lib_tags
+2014-06-13 14:44:04.358 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/priv/init/demo_01_news.erl" with options [{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]}] 
+2014-06-13 14:44:11.033 [notice] <0.280.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:44:11.035 [warning] <0.6.0> lager_error_logger_h dropped 34 messages in the last second that exceeded the limit of 50 messages/sec
+2014-06-13 14:44:11.035 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:44:11.047 [notice] <0.280.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:44:11.047 [notice] <0.280.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:44:11.058 [info] <0.280.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:44:15.435 [notice] <0.282.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:44:15.436 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:44:15.439 [notice] <0.282.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:44:15.439 [notice] <0.282.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:44:15.441 [info] <0.282.0> GET /greeting/create [demo] 200 0ms
+2014-06-13 14:44:16.752 [notice] <0.284.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:44:16.753 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:44:16.756 [notice] <0.284.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-06-13 14:44:16.756 [notice] <0.284.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:44:16.766 [info] <0.284.0> POST /greeting/create [demo] 302 0ms
+2014-06-13 14:44:16.767 [notice] <0.286.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:44:16.768 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:44:16.770 [notice] <0.286.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:44:16.770 [notice] <0.286.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:44:16.772 [info] <0.286.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:44:33.068 [notice] <0.288.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:44:33.068 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:44:33.071 [notice] <0.288.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/model/greeting.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 14:44:33.071 [info] <0.288.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},greeting},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'GreetingText'},{']',{1,36}},{')',{1,37}},{dot,{1,38}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{atom,{4,1},validation_tests},{'(',{4,17}},{')',{4,18}},{'->',{4,20}},{'[',{5,5}},{'{',{5,6}},{fun,{5,7}},{'(',{5,10}},{')',{5,11}},{'->',{5,13}},{atom,{5,16},length},{'(',{5,22}},{var,{5,23},'GreetingText'},{')',{5,35}},{'>',{5,37}},{integer,{5,39},0},{end,{5,41}},{',',{5,44}},{string,{6,9},"Greeting must be non-empty!"},{'}',{6,38}},{',',{6,39}},{'{',{7,6}},{fun,{7,7}},{'(',{7,10}},{')',{7,11}},{'->',{7,13}},{atom,{7,16},length},{'(',{7,22}},{var,{7,23},'GreetingText'},{')',{7,35}},{'=<',{7,37}},{integer,{7,40},140},{end,{7,44}},{',',{7,47}},{string,{8,9},"Greeting must be tweetable"},{'}',{8,37}},{']',{8,38}},{dot,{8,39}},{eof,{19,1}}]
+2014-06-13 14:44:33.072 [notice] <0.288.0>@boss_record_compiler:make_generated_forms:225 Module "greeting" Parameters ['Id','GreetingText'] Attributes[{compile,export_all}]
+2014-06-13 14:44:33.083 [notice] <0.288.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:44:33.083 [notice] <0.288.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:44:33.085 [info] <0.288.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:44:36.081 [notice] <0.291.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:44:36.081 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:44:36.084 [notice] <0.291.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:44:36.084 [notice] <0.291.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:44:36.086 [info] <0.291.0> GET /greeting/list [demo] 200 0ms
+2014-06-13 14:44:36.946 [notice] <0.293.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:44:36.947 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:44:36.950 [notice] <0.293.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:44:36.950 [notice] <0.293.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:44:36.953 [info] <0.293.0> GET /greeting/create [demo] 200 0ms
+2014-06-13 14:44:38.486 [notice] <0.295.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:44:38.487 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:44:38.490 [notice] <0.295.0>@boss_controller_adapter_pmod:action:91 Request Method 'POST'
+2014-06-13 14:44:38.490 [notice] <0.295.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:44:38.491 [info] <0.295.0> POST /greeting/create [demo] 302 0ms
+2014-06-13 14:44:38.493 [notice] <0.297.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 14:44:38.493 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 14:44:38.495 [notice] <0.297.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 14:44:38.495 [notice] <0.297.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 14:44:38.497 [info] <0.297.0> GET /greeting/list [demo] 200 0ms

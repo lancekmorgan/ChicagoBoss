@@ -2,30 +2,26 @@
 -compile(export_all).
 
 % Raw HTML Action
-hello('GET', []) ->
-    {output, "Hello!"}.
 
 % JSON Action
-%hello('GET', []) ->
-%   {json, [{greeting, "Hello, world!"}]}.
 
 % Template Action
-%hello('GET', []) ->
-%    {ok, [{greeting, "Hello, world!"}]}.
+hello('GET', []) ->
+    {ok, [{greeting, "Hello, world!"}]}.
 
-% List Action
-%list('GET', []) ->
-%    Greetings = boss_db:find(greeting, []),
-%    {ok, [{greetings, Greetings}]}.
+
+list('GET', []) ->
+    Greetings = boss_db:find(greeting, []),
+    {ok, [{greetings, Greetings}]}.
 
 % Create Action
-%create('GET', []) ->
-%    ok;
-%create('POST', []) ->
-%    GreetingText = Req:post_param("greeting_text"),
-%    NewGreeting = greeting:new(id, GreetingText),
-%    {ok, SavedGreeting} = NewGreeting:save(),
-%    {redirect, [{action, "list"}]}.
+create('GET', []) ->
+    ok;
+create('POST', []) ->
+    GreetingText = Req:post_param("greeting_text"),
+    NewGreeting = greeting:new(id, GreetingText),
+    {ok, SavedGreeting} = NewGreeting:save(),
+    {redirect, [{action, "list"}]}.
 
 % Goodbye Controller
 %goodbye('POST', []) ->
