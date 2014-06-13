@@ -1,0 +1,42 @@
+2014-06-13 12:57:28.956 [info] <0.7.0> Application lager started on node 'demo@sll-macc02m20fc'
+2014-06-13 12:57:28.973 [info] <0.7.0> Application crypto started on node 'demo@sll-macc02m20fc'
+2014-06-13 12:57:28.983 [info] <0.7.0> Application mimetypes started on node 'demo@sll-macc02m20fc'
+2014-06-13 12:57:29.014 [info] <0.98.0> Starting Boss in development mode....
+
+2014-06-13 12:57:29.022 [info] <0.98.0>@boss_db:start:72 Start Database Adapter boss_db_adapter_mock options [{adapter,mock},{cache_enable,false},{cache_prefix,db},{shards,[]},{is_master_node,true},{db_host,"localhost"},{db_port,1978}]
+2014-06-13 12:57:29.060 [info] <0.98.0> Starting master services on 'demo@sll-macc02m20fc'
+
+2014-06-13 12:57:29.072 [info] <0.7.0> Application tinymq started on node 'demo@sll-macc02m20fc'
+2014-06-13 12:57:29.114 [info] <0.98.0> SSL:[]
+
+2014-06-13 12:57:29.118 [info] <0.98.0> Starting cowboy... on 'demo@sll-macc02m20fc'
+
+2014-06-13 12:57:29.121 [info] <0.7.0> Application cowlib started on node 'demo@sll-macc02m20fc'
+2014-06-13 12:57:29.124 [info] <0.7.0> Application ranch started on node 'demo@sll-macc02m20fc'
+2014-06-13 12:57:29.134 [info] <0.7.0> Application cowboy started on node 'demo@sll-macc02m20fc'
+2014-06-13 12:57:29.134 [info] <0.98.0> Starting http listener... on 0.0.0.0:8001 
+
+2014-06-13 12:57:29.179 [info] <0.98.0>@boss_load:load_all_modules:57 Loading application demo
+2014-06-13 12:57:29.187 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/mail/demo_incoming_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 12:57:29.205 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/mail/demo_outgoing_mail_controller.erl" with options [{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 12:57:29.214 [info] <0.98.0>@boss_controller_compiler:compile:59 Compile controller /Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl
+2014-06-13 12:57:29.214 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/controller/demo_greeting_controller.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_controller_compiler.add_routes_to_forms.1>},{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 12:57:29.226 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/model/greeting.erl" with options [debug_info,{pre_revert_transform,#Fun<boss_record_compiler.trick_out_forms.2>},{token_transform,#Fun<boss_record_compiler.process_tokens.1>},{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 12:57:29.226 [info] <0.98.0>@boss_record_compiler:process_tokens:120 Tokens [{'-',{1,1}},{atom,{1,2},module},{'(',{1,8}},{atom,{1,9},greeting},{',',{1,17}},{'[',{1,19}},{var,{1,20},'Id'},{',',{1,22}},{var,{1,24},'GreetingText'},{']',{1,36}},{')',{1,37}},{dot,{1,38}},{'-',{2,1}},{atom,{2,2},compile},{'(',{2,9}},{atom,{2,10},export_all},{')',{2,20}},{dot,{2,21}},{eof,{19,1}}]
+2014-06-13 12:57:29.226 [notice] <0.98.0>@boss_record_compiler:make_generated_forms:225 Module "greeting" Parameters ['Id','GreetingText'] Attributes[{compile,export_all}]
+2014-06-13 12:57:29.247 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/view/lib/tag_modules/demo_custom_tags.erl" with options [{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 12:57:29.249 [notice] <0.62.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2014-06-13 12:57:29.254 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/src/view/lib/filter_modules/demo_custom_filters.erl" with options [{out_dir,undefined},{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]},{compiler_options,[{parse_transform,lager_transform},return_errors]}] 
+2014-06-13 12:57:29.255 [info] <0.98.0>@boss_load:compile_view_dir_erlydtl:311 Compile Modules "src/view/lib/tag_html"  demo_view_lib_tags
+2014-06-13 12:57:29.294 [error] <0.98.0>@boss_load:load_views_inner:412 Unable to compile "src/view/greeting/create.html" because of [{"src/view/greeting/create.html",[{{21,50},erlydtl_scanner,{illegal_char,37}}]}]
+2014-06-13 12:57:29.325 [notice] <0.98.0>@boss_compiler:compile:47 Compile file "/Users/lanmorg/Dev/cbDev/demo/priv/init/demo_01_news.erl" with options [{include_dirs,["/Users/lanmorg/Dev/cbDev/demo/include"]}] 
+2014-06-13 12:57:45.860 [notice] <0.280.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 12:57:45.862 [warning] <0.6.0> lager_error_logger_h dropped 34 messages in the last second that exceeded the limit of 50 messages/sec
+2014-06-13 12:57:45.862 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 12:57:45.874 [notice] <0.280.0>@boss_controller_adapter_pmod:action:91 Request Method 'GET'
+2014-06-13 12:57:45.874 [notice] <0.280.0>@boss_controller_adapter_pmod:action:92 Tokens []
+2014-06-13 12:57:45.878 [info] <0.280.0> GET /greeting/hello [demo] 200 0ms
+2014-06-13 12:57:49.929 [notice] <0.279.0>@boss_web_controller_handle_request:handle_request:23 ApplicationForPath demo
+2014-06-13 12:57:49.929 [info] <0.265.0> Loading routes from "/Users/lanmorg/Dev/cbDev/demo/priv/demo.routes" ....
+2014-06-13 12:57:49.930 [error] <0.279.0> GET / [demo] 404 0ms
+2014-06-13 12:58:18.563 [error] <0.113.0> Supervisor {<0.113.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
